@@ -6,5 +6,5 @@ Scenario('successful registration test', ({ I }) => {
         I.fillField('email', 'testreg9@list.ru');
         I.fillField('phone', '+79005553758');
         I.click('submit');
-        I.waitUrlEquals('/https://www.reg.ru/user/account/#/?filter=domain');
+        I.waitUrlEquals('/https://www.reg.ru/user/account/#/');
  });
