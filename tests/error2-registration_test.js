@@ -1,0 +1,10 @@
+Feature('tests');
+
+Scenario('error2 registration test', ({ I }) => {
+    I.amOnPage('https://www.reg.ru/user/authorize');
+    I.click('register');
+    I.fillField('email', 'testregrutest@mail.ru');
+    I.fillField('phone', '12345678');
+    I.click('submit');
+    I.waitForText("Некорректный номер телефона");
+});
